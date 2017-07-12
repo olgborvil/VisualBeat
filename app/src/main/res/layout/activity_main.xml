@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AppCompat.Spinner.Underlined"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.olgaborrego.graphapp.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to VisualBeat!"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/imageView"
+        android:layout_alignRight="@+id/date"
+        android:layout_alignEnd="@+id/date" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Insert date"
+        android:textAlignment="center"
+        tools:backgroundTint="@android:color/holo_blue_light"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/menuSpinner"
+        style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/date"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignRight="@+id/date"
+        android:layout_alignStart="@+id/date"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:entries="@array/menu_array"
+        android:foregroundTint="@android:color/holo_blue_light"
+        android:textAlignment="center"
+        android:textDirection="firstStrong" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@mipmap/logo"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/date"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

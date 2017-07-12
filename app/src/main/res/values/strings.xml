@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GraphApp</string>
+    <string-array name="menu_array">
+        <item>ECG</item>
+        <item>Heart Rate</item>
+    </string-array>
+</resources>
